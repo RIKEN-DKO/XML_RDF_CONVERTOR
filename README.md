@@ -107,9 +107,6 @@ SPASE（**Space Physics Archive Search and Extract**）は、**ヘリオフィ�
 - `examples/spase/spase_schema_rules.tsv`
   - SPASE 用の基本設定
   - `measurement.numeric_default=datatype`
-- `examples/spase/spase_schema_rules_measure_object.tsv`
-  - SPASE 用の “数値はデフォルトでオブジェクト” 版
-  - `measurement.numeric_default=object`
 
 ##### SPASE の実行例
 
