@@ -1,0 +1,49 @@
+{
+  "version": 1,
+  "project": {
+    "base_ns": "",
+    "name": ""
+  },
+  "input": {
+    "follow_includes": false
+  },
+  "naming": {
+    "name_style": "raw",
+    "lower_first_properties": true,
+    "contextual_properties": false
+  },
+  "owl": {
+    "skip_ref_classes": true,
+    "skip_group_classes": true,
+    "skip_id_attributes": true,
+    "enum_as_class": true,
+    "measurement_range_mode": "omit"
+  },
+  "measurement": {
+    "numeric_default": "object",
+    "unitless_literal_properties": [],
+    "unitless_literal_property_patterns": [],
+    "unit_suffix": "Unit",
+    "skip_unit_properties": true,
+    "value_class_local": "QuantityValue"
+  },
+  "external": {
+    "emit_rdf_value": true,
+    "emit_qudt_unit": true
+  },
+  "validation": {
+    "mode": "warn",
+    "print_patches": true,
+    "todo_patch_path": ""
+  },
+  "logging": {
+    "print_effective_config": "summary",
+    "quiet": false
+  },
+  "verify": {
+    "enabled": false,
+    "reference_ttl": "",
+    "report_json": "",
+    "report_csv": ""
+  }
+}

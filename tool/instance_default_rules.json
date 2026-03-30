@@ -1,0 +1,64 @@
+{
+  "version": 1,
+  "project": {
+    "base_ns": "",
+    "name": ""
+  },
+  "instance": {
+    "base_ns": "",
+    "uri_pattern": "{base}{class}/{id}",
+    "id_attribute": "ID",
+    "auto_id_prefix_mode": "class",
+    "auto_id_prefix_fixed": "obj",
+    "auto_id_start": 0,
+    "emit_identifier_triple": true,
+    "identifier_predicate": "http://purl.org/dc/terms/identifier",
+    "allow_forward_refs": true
+  },
+  "input": {
+    "follow_includes": false
+  },
+  "naming": {
+    "name_style": "raw",
+    "lower_first_properties": true,
+    "contextual_properties": false
+  },
+  "ref": {
+    "element_suffix": "Ref",
+    "id_attribute": "ID",
+    "strip_suffix_for_property": true,
+    "strip_suffix_for_class": true
+  },
+  "enum": {
+    "as_uri": true,
+    "uri_template": "{base_ns}{type}#{value}",
+    "value_normalization": "lower_first",
+    "leading_digit_prefix": "v",
+    "value_uri_map": {},
+    "value_uri_map_by_type": {},
+    "unknown_value_policy": "warn_uri"
+  },
+  "measurement": {
+    "numeric_default": "object",
+    "unitless_literal_properties": [],
+    "unitless_literal_property_patterns": [],
+    "unit_suffix": "Unit",
+    "skip_unit_properties": true,
+    "unit_base_ns": "",
+    "unit_uri_map": {},
+    "unit_uri_template": "{unit_base}{kind}#{unit}",
+    "unit_normalization": "quote",
+    "value_class_uri": "",
+    "quantity_class_by_property": {},
+    "deduplicate_quantity_nodes": true
+  },
+  "validation": {
+    "mode": "warn",
+    "print_patches": true,
+    "todo_patch_path": ""
+  },
+  "logging": {
+    "print_effective_config": "summary",
+    "quiet": false
+  }
+}

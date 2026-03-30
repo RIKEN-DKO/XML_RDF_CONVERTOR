@@ -1,0 +1,46 @@
+# xml2rdf rules (TSV)
+# spec	xml-rdf-convertor-instance-1.0
+# format:	key<TAB>value<TAB>(optional comment)
+# arrays:	key[] value (append)
+# maps:	key[subkey] value
+#
+enum.as_uri	true
+enum.leading_digit_prefix	v
+enum.unknown_value_policy	warn_uri
+enum.uri_template	{base_ns}{type}#{value}
+enum.value_normalization	lower_first
+input.follow_includes	false
+instance.allow_forward_refs	true
+instance.auto_id_prefix_fixed	obj
+instance.auto_id_prefix_mode	class
+instance.auto_id_start	0
+instance.base_ns	
+instance.emit_identifier_triple	true
+instance.id_attribute	ID
+instance.identifier_predicate	http://purl.org/dc/terms/identifier
+instance.uri_pattern	{base}{class}/{id}
+logging.print_effective_config	summary
+logging.quiet	false
+measurement.deduplicate_quantity_nodes	true
+measurement.numeric_default	object
+measurement.skip_unit_properties	true
+measurement.unit_base_ns	
+measurement.unit_normalization	quote
+measurement.unit_suffix	Unit
+measurement.unit_uri_template	{unit_base}{kind}#{unit}
+measurement.unitless_literal_properties	[]
+measurement.unitless_literal_property_patterns	[]
+measurement.value_class_uri	
+naming.contextual_properties	false
+naming.lower_first_properties	true
+naming.name_style	raw
+project.base_ns	
+project.name	
+ref.element_suffix	Ref
+ref.id_attribute	ID
+ref.strip_suffix_for_class	true
+ref.strip_suffix_for_property	true
+validation.mode	warn
+validation.print_patches	true
+validation.todo_patch_path	
+version	1

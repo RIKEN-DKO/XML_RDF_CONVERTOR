@@ -1,0 +1,35 @@
+# xsd2owl rules (TSV)
+# spec	xml-rdf-convertor-schema-1.0
+# format:	key<TAB>value<TAB>(optional comment)
+# arrays:	key[] value (append)
+# maps:	key[subkey] value
+#
+external.emit_qudt_unit	true
+external.emit_rdf_value	true
+input.follow_includes	false
+logging.print_effective_config	summary
+logging.quiet	false
+measurement.numeric_default	object	# object|datatype
+measurement.skip_unit_properties	true
+measurement.unit_suffix	Unit
+measurement.unitless_literal_properties	[]
+measurement.unitless_literal_property_patterns	[]
+measurement.value_class_local	QuantityValue
+naming.contextual_properties	false
+naming.lower_first_properties	true
+naming.name_style	raw
+owl.enum_as_class	true
+owl.measurement_range_mode	omit	# omit|thing|value_class
+owl.skip_group_classes	true
+owl.skip_id_attributes	true
+owl.skip_ref_classes	true
+project.base_ns		# REQUIRED: base namespace for generated ontology terms (end with / recommended).
+project.name	
+validation.mode	warn	# force|warn|strict
+validation.print_patches	true
+validation.todo_patch_path	
+verify.enabled	false
+verify.reference_ttl	
+verify.report_csv	
+verify.report_json	
+version	1
