@@ -1,0 +1,19 @@
+# rules for OME sample instance conversion
+project.base_ns	http://www.openmicroscopy.org/rdf/2016-06/ome_core/
+project.name	OME instance demo
+instance.base_ns	http://www.openmicroscopy.org/rdf/2016-06/ome_instance/
+naming.name_style	raw
+naming.lower_first_properties	true
+naming.contextual_properties	false
+measurement.numeric_default	object
+measurement.unit_suffix	Unit
+measurement.skip_unit_properties	true
+measurement.unitless_literal_property_patterns[]	^size[XYZCT]$
+measurement.unitless_literal_properties[]	sizeX
+measurement.unitless_literal_properties[]	sizeY
+measurement.unitless_literal_properties[]	sizeZ
+measurement.unitless_literal_properties[]	sizeC
+measurement.unitless_literal_properties[]	sizeT
+enum.as_uri	true
+logging.print_effective_config	summary
+validation.mode	warn

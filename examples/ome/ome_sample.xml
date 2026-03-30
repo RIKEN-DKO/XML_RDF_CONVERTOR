@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OME xmlns="http://www.openmicroscopy.org/Schemas/OME/2016-06" Creator="xml2rdf demo">
+  <Image ID="Image:0" Name="demo image">
+    <Pixels ID="Pixels:0"
+            SizeX="512" SizeY="512" SizeZ="1" SizeC="1" SizeT="1"
+            PhysicalSizeX="0.100" PhysicalSizeXUnit="µm"
+            PhysicalSizeY="0.100" PhysicalSizeYUnit="µm"
+            Type="uint16">
+    </Pixels>
+  </Image>
+</OME>

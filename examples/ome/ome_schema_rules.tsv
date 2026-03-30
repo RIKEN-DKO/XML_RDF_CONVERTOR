@@ -1,0 +1,19 @@
+# OME rules for xsd2owl_set_et_v3
+project.base_ns	http://www.openmicroscopy.org/rdf/2016-06/ome_core/
+project.name	OME core
+
+# Keep defaults mostly; show a few explicit choices
+measurement.numeric_default	object
+measurement.skip_unit_properties	true
+owl.measurement_range_mode	omit
+
+# Optional: enable verify
+verify.enabled	false
+verify.reference_ttl	
+
+# Print full effective config? (summary|full|none)
+logging.print_effective_config	summary
+
+# Validation mode (force|warn|strict)
+validation.mode	warn
+validation.todo_patch_path	ome_rules.todo.tsv

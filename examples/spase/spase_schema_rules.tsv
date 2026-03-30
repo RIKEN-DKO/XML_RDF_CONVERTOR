@@ -1,0 +1,42 @@
+# SPASE rules for xsd2owl_set_et_v3 (proposal)
+# Base namespace is derived from XSD targetNamespace (with trailing '/').
+project.base_ns	http://www.spase-group.org/data/schema/
+project.name	SPASE schema 2.6.1
+
+# Input
+input.follow_includes	false
+
+# Naming (follow OME-style conventions)
+naming.name_style	raw
+naming.lower_first_properties	true
+naming.contextual_properties	false
+
+# OWL generation
+owl.skip_ref_classes	true
+owl.skip_group_classes	true
+owl.skip_id_attributes	true
+owl.enum_as_class	true
+# For measurement-like object properties, omit range (not very relevant if numeric_default=datatype)
+owl.measurement_range_mode	omit
+
+# Measurement modelling
+# SPASE XSD often uses a separate element 'Units' rather than per-field '*Unit'.
+# To avoid creating many value-object nodes without unit pairs, default numeric values are literals.
+measurement.numeric_default	datatype
+measurement.unit_suffix	Unit
+measurement.skip_unit_properties	true
+
+# Validation / logs
+validation.mode	warn
+validation.print_patches	true
+# Optional: write TODO patch file (leave empty to disable)
+validation.todo_patch_path	
+
+logging.print_effective_config	summary
+logging.quiet	false
+
+# Verify (disabled by default; set reference_ttl if you have one)
+verify.enabled	false
+verify.reference_ttl	
+verify.report_json	
+verify.report_csv	
