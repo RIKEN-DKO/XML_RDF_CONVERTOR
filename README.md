@@ -143,6 +143,6 @@ measurement.unitless_literal_properties[]	sizeY
 - `measurement.numeric_default=object` のとき、単位ペア (`*Unit`) が見つからない数値項目は警告対象になります。
 - 必要に応じて `validation.todo_patch_path` を設定すると、追記候補のルールを TSV / JSON で出力できます。
 
-##　謝辞
+## 謝辞
 
 本ツールの開発の一部は、「AI等の活用を推進する研究データエコシステム構築事業」、理化学研究所TRIP事業にて実施しました。
